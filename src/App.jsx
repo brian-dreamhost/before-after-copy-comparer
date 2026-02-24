@@ -115,6 +115,16 @@ export default function App() {
           </p>
         </header>
 
+        <div className="flex justify-end mb-4">
+          <button
+            type="button"
+            onClick={handleLoadExample}
+            className="px-3 py-1.5 text-xs font-mono bg-prince/20 text-prince border border-prince/30 rounded hover:bg-prince/30 transition-colors focus:outline-none focus:ring-2 focus:ring-prince focus:ring-offset-2 focus:ring-offset-abyss"
+          >
+            Fill Test Data
+          </button>
+        </div>
+
         {/* Input Area */}
         <section className="mb-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mb-6">
