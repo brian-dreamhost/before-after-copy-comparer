@@ -107,7 +107,7 @@ export default function App() {
               Free Tool
             </span>
           </div>
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-4 mb-4">
+          <h1 className="text-4xl lg:text-[2.7rem] xl:text-[3.6rem] font-bold text-white mt-4 mb-4">
             Before/After Copy Comparer
           </h1>
           <p className="text-cloudy text-lg max-w-3xl">
