@@ -36,7 +36,7 @@ export default function App() {
     })
   }
 
-  function handleLoadExample() {
+  function fillTestData() {
     setBeforeText(SAMPLE_BEFORE)
     setAfterText(SAMPLE_AFTER)
     setResults(null)
@@ -90,7 +90,7 @@ export default function App() {
 
   return (
     <div className="bg-abyss min-h-screen bg-glow bg-grid">
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-8 lg:py-12 animate-fadeIn">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-4 py-8 lg:py-12 animate-fadeIn">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-galactic">
           <a href="https://seo-tools-tau.vercel.app/" className="text-azure hover:text-white transition-colors">Free Tools</a>
@@ -118,7 +118,7 @@ export default function App() {
         <div className="flex justify-end mb-4">
           <button
             type="button"
-            onClick={handleLoadExample}
+            onClick={fillTestData}
             className="px-3 py-1.5 text-xs font-mono bg-prince/20 text-prince border border-prince/30 rounded hover:bg-prince/30 transition-colors focus:outline-none focus:ring-2 focus:ring-prince focus:ring-offset-2 focus:ring-offset-abyss"
           >
             Fill Test Data
@@ -175,7 +175,7 @@ export default function App() {
             </button>
 
             <button
-              onClick={handleLoadExample}
+              onClick={fillTestData}
               className="border border-metal/40 text-cloudy font-medium rounded-lg px-6 py-3 hover:border-metal/60 hover:text-white focus:ring-2 focus:ring-azure focus:ring-offset-2 focus:ring-offset-abyss transition-colors flex items-center gap-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -276,7 +276,7 @@ export default function App() {
               Enter your original and revised copy above, then click "Compare" to see word-level changes and readability improvements.
             </p>
             <button
-              onClick={handleLoadExample}
+              onClick={fillTestData}
               className="text-azure hover:text-white transition-colors text-sm font-medium"
             >
               Or try the example to see how it works
